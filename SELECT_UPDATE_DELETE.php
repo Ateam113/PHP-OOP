@@ -19,13 +19,13 @@
 
 	$create = "CREATE TABLE myguest(
 		id INT(5) AUTO_INCREMENT PRIMARY KEY,
-		name VARCHAR(255) NOT NULL)
-";
+		name VARCHAR(255) NOT NULL)";
+
 	$connect ->query($create);
 
-	// $insert ="INSERT INTO myguest(name) VALUES('JOHN TERY')";
-	// $connect ->query($insert);
+	$insert ="INSERT INTO myguest(name) VALUES('JOHN TERY')";
+	$connect ->query($insert);
 
-	$delete "DELETE FROM myguest WHERE id=2";
-	$connect = query($delete);
+	$delete "DELETE FROM myguest WHERE id = 1 ";
+	$connect ->query($delete);
 
