@@ -6,13 +6,17 @@
 </head>
 <body>
 	<?php
-		echo "Nguyễn Hoàng Anh ";
-		echo "<br>";
-		echo "T1801A";
-		
-		$a =1;
-		echo $a;
+
+	$xapsep = array(1,22,3,44,25,6,57,8,90,10);
+	ksort($xapsep);sort($xapsep);// tang dan
+	// rsort($xapsep);arsort($xapsep);// giam dan
+
+
+	// print_r($xapsep);
+	foreach ($xapsep as $xapsep) {
+		echo $xapsep;
+		echo " /";
+	}
 	?>
-	
 </body>
 </html>
