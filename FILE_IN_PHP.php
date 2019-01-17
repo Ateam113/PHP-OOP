@@ -6,10 +6,17 @@
 </head>
 <body>
 	<?php echo "FILE trong PHP"; 
-	// trả về con trỏ
+	/*
+	hàm fopen trả về con trỏ của file 
+	tham sô thư 2 là quyền truy câp "r"ỏ "w"
+	*/
+
 	$file = fopen('OOP TRONG PHP.txt', 'r');
 	echo '<br>';
-	echo fgets($file);
+	echo "read line one......".'<br>';
+	echo fgets($file).'<br>';
+	echo "read all".'<br>';
+	echo fread($file, filesize('OOP TRONG PHP.txt'));
 	?>
 
 </body>
